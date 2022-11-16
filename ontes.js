@@ -1,4 +1,4 @@
-// answers
+// answers url
 const url = 'https://raw.githubusercontent.com/Fidasek009/ONTES-Plugin/main/ONTES-Answers.json';
 
 function delay(time) {
@@ -7,14 +7,16 @@ function delay(time) {
 
 async function loadAnswers() {
 	await delay(5000); // wait for site to load questions
-    const response = await fetch(url); // download answers
+	
+	// download answers
+    const response = await fetch(url);
     const answers = await response.json();
 	
-	const keys = Object.keys(answers);
-	for (let i = 0; i < keys.length; i++) { // cycle through all answers
-		const key = keys[i];
-		let question = await document.getElementById(answers[key]); // find right answer
-		if(question != null) question.style.color = "red"; // mark the right answer
+	var questions = document.querySelectorAll('[typ="single"]'); // get all question DIVs
+	for (var i = questions.length - 1; i >= 0; i--)
+	{
+		let otazka = questions[i].getAttribute("id"); // get id of question
+		document.getElementById(answers[otazka]).style.color = "red"; // get answer for question
 	}
 	console.log("done")
 }

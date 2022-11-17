@@ -8,13 +8,6 @@
 		"48": "/images/ontes-48.png",
 		"128": "/images/ontes-128.png"
 	},
-	"page_action": {
-		"default_icon": {
-			"16": "/images/ontes-16.png",
-			"48": "/images/ontes-48.png",
-			"128": "/images/ontes-128.png"
-		}
-	},
 	"content_scripts": [
 		{
 			"matches": ["https://ontes.vsps-su.cz/*"],

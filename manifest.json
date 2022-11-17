@@ -1,7 +1,20 @@
 {
 	"manifest_version": 3,
 	"name": "ONTES Wizzard",
-	"version": "1.0.0",
+	"description": "A wizzard for the ONTES website",
+	"version": "1.0",
+	"icons": {
+		"16": "/images/ontes-16.png",
+		"48": "/images/ontes-48.png",
+		"128": "/images/ontes-128.png"
+	},
+	"page_action": {
+		"default_icon": {
+			"16": "/images/ontes-16.png",
+			"48": "/images/ontes-48.png",
+			"128": "/images/ontes-128.png"
+		}
+	},
 	"content_scripts": [
 		{
 			"matches": ["https://ontes.vsps-su.cz/*"],

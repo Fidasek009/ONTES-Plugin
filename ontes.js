@@ -9,7 +9,7 @@ function delay(time) {
 }
 
 async function loadAnswers() {
-	await delay(2000); // wait for site to load questions
+	await delay(5000); // wait for site to load questions
 	
 	// download answers
     const response = await fetch(SingeURL);

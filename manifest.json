@@ -13,6 +13,5 @@
 			"matches": ["https://ontes.vsps-su.cz/*"],
 			"js": ["ontes.js"]
 		}
-	],
-	"permissions": ["activeTab"]
+	]
 }

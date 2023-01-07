@@ -1,11 +1,18 @@
 // answers url
 const SingeURL = 'https://raw.githubusercontent.com/Fidasek009/ONTES-Plugin/main/answers/.ONTES-Single-Answers.json';
 const MultiURL = 'https://raw.githubusercontent.com/Fidasek009/ONTES-Plugin/main/answers/.ONTES-Multi-Answers.json';
+
+const kontrolaURL = 'https://ontes.vsps-su.cz/procvicovani/kontrola.php';
 // the marker for right answers
-const marker = `<a class="marker" style="color:white">____</a>`;
+const marker = `<span class="marker" style="width:2rem; height:1rem; opacity:0; cursor:text;"></span>`;
 
 function delay(time) {
   return new Promise(resolve => setTimeout(resolve, time));
+}
+
+async function fetchAnswers() {
+
+
 }
 
 async function loadAnswers() {
